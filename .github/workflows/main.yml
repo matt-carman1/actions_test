@@ -3,6 +3,15 @@
 
 name: test_run
 
+on:
+  workflow_dispatch:
+    inputs:
+      SCHRODINGER:
+        description: 'path to SCHRODINGER'
+        type: string
+        # Input has to be provided for the workflow to run
+        required: true
+      
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow git pulls and runs squish suites
@@ -12,10 +21,11 @@ jobs:
     timeout-minutes: 900
     # Tasks that will be executed as part of the job
     steps:
+    - uses: actions/checkout@v4
     - name: SCHRODINGER
-      run: export SCHRODINGER=/scr/carman/24-4_build079_gen
+      run: echo ${{ github.event.inputs.SCHRODINGER }}
     - name: Create venv
-      run: $SCHRODINGER/run schrodinger_virtualenv.py test_env.ve
+      run: $run: ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
     - name: Start venv
       run: source test_env.ve/bin/activate
     - name: pip selenium
