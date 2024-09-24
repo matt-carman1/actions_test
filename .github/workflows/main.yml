@@ -17,7 +17,7 @@ jobs:
   # This workflow git pulls and runs squish suites
   test_1:
     # The type of runner that the job will run on
-    runs-on: [self-hosted, desk-lu276]
+    runs-on: [self-hosted, Linux]
     timeout-minutes: 900
     # Tasks that will be executed as part of the job
     steps:
