@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 900
     # Tasks that will be executed as part of the job
     steps:
-    - uses: actions/checkout@v4
+    # - uses: actions/checkout@v4
     - name: SCHRODINGER
       run: echo ${{ github.event.inputs.SCHRODINGER }}
     - name: Create venv
