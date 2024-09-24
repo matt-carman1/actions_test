@@ -1,0 +1,26 @@
+
+# Trigger a manual squish run
+
+name: test_run
+
+on:
+  workflow_dispatch:
+      
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow git pulls and runs squish suites
+  test_1:
+    # The type of runner that the job will run on
+    runs-on: [self-hosted, desk-lu276]
+    timeout-minutes: 900
+    # Tasks that will be executed as part of the job
+    steps:
+    - name: SCHRODINGER
+      run: export SCHRODINGER=/scr/carman/24-4_build079_gen
+    - name: Create venv
+      run: $SCHRODINGER/run schrodinger_virtualenv.py test_env.ve
+    - name: Start venv
+      run: source test_env.ve/bin/activate
+    - name: pip selenium
+      run: pip install selenium
+   
