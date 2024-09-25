@@ -1,0 +1,14 @@
+tester_email: john.turner@schrodinger.com, matt.carman@schrodinger.com
+suite_name: suite_maestro_PRESETStoolbox
+
+test_descriptions:
+tst_01: Checks the basic features of the PRESETS toolbox in Maestro
+
+#jira
+#jira_disabled: QA-5768
+
+Tested on Linux on 19-2 OB04. Suite ran without failures.
+Reference_build: 46004
+product: Maestro
+#disabled: True
+tags: selenium

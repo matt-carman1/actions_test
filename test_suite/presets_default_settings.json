@@ -1,0 +1,338 @@
+{
+    "(none)":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["within", "8.00"],
+            "Waters": ["within", "3.00"],
+            "Ions": ["within", "3.00"],
+            "Receptor hydrogens": "polar only",
+            "Ligand hydrogens": "all",
+            "Fit to Ligand": "True"
+            },
+        "Representation":{
+            "Default": "wire",
+            "Waters": "ballnstick",
+            "Ligands": "ballnstick",
+            "Ions": "cpk",
+            "Display": "all",
+            "Scheme": "Residue Position",
+            "Style": "Cartoon"
+        },
+        "Color": {
+            "Default": "Element",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "Residue Information",
+            "Ligands": "None",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "False",
+            "Hide other interactions": "False"
+        },
+        "Surfaces":{
+            "Create or update specified surfaces": "False",
+            "Hide other surfaces": "False"
+        }
+    },
+    "Ligand Sites - Cartoon":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["within", "5.00"],
+            "Waters": ["within", "3.00"],
+            "Ions": ["within", "3.00"],
+            "Receptor hydrogens": "polar only",
+            "Ligand hydrogens": "all",
+            "Fit to Ligand": "True"
+            },
+        "Representation":{
+            "Default": "wire",
+            "Waters": "ballnstick",
+            "Ligands": "ballnstick",
+            "Ions": "cpk",
+            "Display": "all",
+            "Scheme": "Chain Name",
+            "Style": "Cartoon"
+        },
+        "Color": {
+            "Default": "Element",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "Residue Information",
+            "Ligands": "None",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "True",
+            "Hide other interactions": "False",
+            "H-bonds and halogen bond": ["Ligand-Receptor","True","True","True","False"],
+            "Contacts": ["Ligand-Receptor", "False", "True", "True"],
+            "Pi interactions": ["Ligand-Receptor", "True", "True"]
+        },
+        "Surfaces":{
+            "Create or update specified surfaces": "False",
+            "Hide other surfaces": "True"
+        }
+    },
+    "Ligand Sites - Surface":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["within", "5.00"],
+            "Waters": ["within", "3.00"],
+            "Ions": ["within", "3.00"],
+            "Receptor hydrogens": "polar only",
+            "Ligand hydrogens": "all",
+            "Fit to Ligand": "True"
+            },
+        "Representation":{
+            "Default": "wire",
+            "Waters": "ballnstick",
+            "Ligands": "ballnstick",
+            "Ions": "cpk",
+            "Display": "none"
+        },
+        "Color": {
+            "Default": "Element",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "None",
+            "Ligands": "Stereochemistry + Charge",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "True",
+            "Hide other interactions": "False",
+            "H-bonds and halogen bond": ["Ligand-Receptor","True","True","True","False"],
+            "Contacts": ["Ligand-Receptor", "False", "True", "True"],
+            "Pi interactions": ["Ligand-Receptor", "True", "True"]
+        },
+        "Surfaces":{
+            "Hide other surfaces": "True",
+            "Create or update specified surfaces": "True",
+            "Receptor": ["False", "True", "5.00"],
+            "Transparency": "0",
+            "Color Scheme": "Electrostatic Potential",
+            "Ligands": "False"
+        }
+    },
+    "Ligand Sites - Surface (Transparent)":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["within", "5.00"],
+            "Waters": ["within", "3.00"],
+            "Ions": ["within", "3.00"],
+            "Receptor hydrogens": "polar only",
+            "Ligand hydrogens": "all",
+            "Fit to Ligand": "True"
+            },
+        "Representation":{
+            "Default": "wire",
+            "Waters": "ballnstick",
+            "Ligands": "ballnstick",
+            "Ions": "cpk",
+            "Display": "none"
+        },
+        "Color": {
+            "Default": "Element",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "None",
+            "Ligands": "Stereochemistry + Charge",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "True",
+            "Hide other interactions": "False",
+            "H-bonds and halogen bond": ["Ligand-Receptor","True","True","True","False"],
+            "Contacts": ["Ligand-Receptor", "False", "True", "True"],
+            "Pi interactions": ["Ligand-Receptor", "True", "True"]
+        },
+        "Surfaces":{
+            "Hide other surfaces": "True",
+            "Create or update specified surfaces": "True",
+            "Receptor": ["False", "True", "5.00"],
+            "Transparency": "50",
+            "Color Scheme": "Electrostatic Potential",
+            "Ligands": "False"
+        }
+    },
+    "Binding Mode Comparison":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["within", "8.00"],
+            "Waters": ["within", "3.00"],
+            "Ions": ["within", "3.00"],
+            "Receptor hydrogens": "polar only",
+            "Ligand hydrogens": "polar only",
+            "Fit to Ligand": "True"
+            },
+        "Representation":{
+            "Default": "wire",
+            "Waters": "ballnstick",
+            "Ligands": "ballnstick",
+            "Ions": "tube",
+            "Display": "all",
+            "Scheme": "Entry",
+            "Style": "Cartoon"
+        },
+        "Color": {
+            "Default": "Element (Entry Carbons)",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "None",
+            "Ligands": "None",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "False",
+            "Hide other interactions": "False",
+            "H-bonds and halogen bond": ["Ligand-Receptor","True","True","True","False"],
+            "Contacts": ["Ligand-Receptor", "False", "True", "True"],
+            "Pi interactions": ["Ligand-Receptor", "True", "True"]
+        },
+        "Surfaces":{
+            "Hide other surfaces": "True",
+            "Create or update specified surfaces": "False"
+        }
+    },
+    "Technical Advanced":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["all"],
+            "Waters": ["all"],
+            "Ions": ["all"],
+            "Receptor hydrogens": "all",
+            "Ligand hydrogens": "all",
+            "Fit to Ligand": "False"
+            },
+        "Representation":{
+            "Default": "wire",
+            "Waters": "ballnstick",
+            "Ligands": "ballnstick",
+            "Ions": "cpk",
+            "Display": "all",
+            "Scheme": "Residue Type",
+            "Style": "Tube"
+        },
+        "Color": {
+            "Default": "Element",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "None",
+            "Ligands": "None",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "True",
+            "Hide other interactions": "False",
+            "H-bonds and halogen bond": ["All","True","True","True","True"],
+            "Contacts": ["All", "False", "True", "True"],
+            "Pi interactions": ["All", "True", "True"]
+        },
+        "Surfaces":{
+            "Hide other surfaces": "True",
+            "Create or update specified surfaces": "False"
+        }
+    },
+    "Protein Surface":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["none"],
+            "Waters": ["none"],
+            "Ions": ["none"],
+            "Receptor hydrogens": "none",
+            "Ligand hydrogens": "none",
+            "Fit to Ligand": "False"
+            },
+        "Representation":{
+        },
+        "Color": {
+            "Default": "Element",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "Residue Information",
+            "Ligands": "None",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "False",
+            "Hide other interactions": "False"
+        },
+        "Surfaces":{
+            "Hide other surfaces": "True",
+            "Create or update specified surfaces": "True",
+            "Receptor": ["True", "False", "5.00"],
+            "Transparency": "30",
+            "Color Scheme": "Electrostatic Potential",
+            "Ligands": "False"
+        }
+    },
+    "Maestro Custom Preset":{
+        "General":{
+            "Ligands": "all",
+            "Residues": ["within", "8.00"],
+            "Waters": ["within", "3.00"],
+            "Ions": ["within", "3.00"],
+            "Receptor hydrogens": "polar only",
+            "Ligand hydrogens": "all",
+            "Fit to Ligand": "True"
+            },
+        "Representation":{
+            "Default": "wire",
+            "Waters": "ballnstick",
+            "Ligands": "ballnstick",
+            "Ions": "cpk",
+            "Display": "all",
+            "Scheme": "Residue Position",
+            "Style": "Cartoon"
+        },
+        "Color": {
+            "Default": "Element",
+            "Ligands": "Element (Entry Carbons)",
+            "Waters": "Element",
+            "Ions": "Element"
+        },
+        "Labels":{
+            "Protein": "Residue Information",
+            "Ligands": "None",
+            "Waters": "None",
+            "Ions": "None"
+        },
+        "Interactions":{
+            "Display chosen interactions": "False",
+            "Hide other interactions": "False"
+        },
+        "Surfaces":{
+            "Create or update specified surfaces": "False",
+            "Hide other surfaces": "False"
+        }
+    }
+}
