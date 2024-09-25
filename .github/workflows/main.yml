@@ -25,13 +25,17 @@ jobs:
     - name: SCHRODINGER
       run: echo ${{ github.event.inputs.SCHRODINGER }}
     - name: Create venv
-      run: ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
-    - name: Start venv
-      run: source test_env.ve/bin/activate
-    - name: pip selenium
-      run: pip install selenium
-    - name: check python
-      run: which python
-    - name: run python file
-      run: python ${{ github.action_path}}/test_thing.py
+      run: |
+        ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
+        source test_env.ve/bin/activate
+        pip install selenium
+        which python
+    #- name: Start venv
+     # run: source test_env.ve/bin/activate
+    #- name: pip selenium
+      #run: pip install selenium
+    #- name: check python
+     # run: which python
+    #- name: run python file
+      #run: python ${{ github.action_path}}/test_thing.py
    
