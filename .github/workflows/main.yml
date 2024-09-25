@@ -30,6 +30,7 @@ jobs:
         source test_env.ve/bin/activate
         pip install selenium
         python sel_import_test.py
+        ${{ github.event.inputs.SCHRODINGER }}/run squish.py
         
    
     #- name: Start venv
