@@ -29,7 +29,7 @@ jobs:
         ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
         source test_env.ve/bin/activate
         pip install selenium
-        python ${{ github.action_path}}/sel_import_test.py
+        python sel_import_test.py
         cd
         pwd
         find -iname selenium
