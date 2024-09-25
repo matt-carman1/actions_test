@@ -30,6 +30,8 @@ jobs:
       run: source test_env.ve/bin/activate
     - name: pip selenium
       run: pip install selenium
+    - name: check python
+      run: which python
     - name: run python file
       run: python ${{ github.action_path}}/test_thing.py
    
