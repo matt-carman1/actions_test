@@ -27,11 +27,12 @@ jobs:
     - name: Create venv
       run: |
         ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
-        . source test_env.ve/bin/activate
+        source test_env.ve/bin/activate
         pip install selenium
+        which selenium
 
-    - name: Which python
-      run: which python
+    - name: Which selenium
+      run: which selenium
    
     #- name: Start venv
      # run: source test_env.ve/bin/activate
