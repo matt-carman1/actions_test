@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 900
     # Tasks that will be executed as part of the job
     steps:
-    # - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
     - name: SCHRODINGER
       run: echo ${{ github.event.inputs.SCHRODINGER }}
     - name: Create venv
@@ -30,4 +30,6 @@ jobs:
       run: source test_env.ve/bin/activate
     - name: pip selenium
       run: pip install selenium
+    - name: run python file
+      run: python test_thing.py
    
