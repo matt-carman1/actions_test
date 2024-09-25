@@ -29,8 +29,7 @@ jobs:
         ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
         source test_env.ve/bin/activate
         pip install selenium
-        which selenium
-
+       
     - name: Which selenium
       run: which selenium
    
