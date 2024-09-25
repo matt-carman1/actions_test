@@ -1,0 +1,8 @@
+ASSAY_LIMITED_DIALOG = '.assay-limited-dialog .bb-dialog'
+EDIT_LIMITING_CONDITION_BUTTON = '.edit-limiting-condition-button'
+LIMITED_COLUMN_TITLE_INPUT = '.limited-assay-column-name-input input'
+LIMITING_CONDITION_PICKLIST = '#limiting-conditions-picklist li'
+LIMITING_CONDITION_QUERY_BOX_ = '.limiting-condition-panel[data-condition-name="{}"]'
+LIMITING_CONDITION_LOWER_RANGE_INPUT = '.range-input .components-text-input-wrapper input[name="low"]'
+LIMITING_CONDITION_UPPER_RANGE_INPUT = '.range-input .components-text-input-wrapper input[name="high"]'
+LIMITING_CONDITION_TITLE_IN_DIALOG = '.limiting-condition-panel .condition-header .title'

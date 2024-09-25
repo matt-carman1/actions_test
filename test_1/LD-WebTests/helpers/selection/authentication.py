@@ -1,0 +1,5 @@
+LOGIN_BUTTON = '#loginButton'
+PASSWORD_INPUT = '#password'
+USER_NAME_ELEMENT = '#user-name-element'
+USERNAME_INPUT = '#username'
+LOGIN_ERROR_MSG = '#errorMsg'

@@ -1,0 +1,289 @@
+{
+    "name": "Computational Models", 
+    "favorite": false, 
+    "updated_at": 59, 
+    "tooltip": {
+        "modified_date": null, 
+        "modified_user": null, 
+        "description": "Computational Models include complex simulations and 3D docking models. Any 3D docking models include the term (Complex) in their name.  To add custom models to this list contact your system administrator."
+    }, 
+    "id": "b22611bf5565ea7c4d184270c63700fce4ad1410", 
+    "addable_column_ids": [], 
+    "column_folder_node_type": "INNER", 
+    "children": [
+        {
+            "name": "Enzyme", 
+            "favorite": false, 
+            "updated_at": 60, 
+            "tooltip": {
+                "modified_date": null, 
+                "modified_user": null, 
+                "description": null
+            }, 
+            "id": "00f326a204b06fd9bbd368596c98914d39c6dbdd", 
+            "parent_id": "b22611bf5565ea7c4d184270c63700fce4ad1410", 
+            "addable_column_ids": [], 
+            "column_folder_node_type": "INNER", 
+            "children": [
+                {
+                    "name": "Old", 
+                    "favorite": false, 
+                    "updated_at": 61, 
+                    "tooltip": {
+                        "modified_date": null, 
+                        "modified_user": null, 
+                        "description": null
+                    }, 
+                    "id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                    "parent_id": "00f326a204b06fd9bbd368596c98914d39c6dbdd", 
+                    "addable_column_ids": [], 
+                    "column_folder_node_type": "INNER", 
+                    "children": [
+                        {
+                            "name": "Ertl PSA (Ertl PSA)", 
+                            "favorite": true, 
+                            "updated_at": 74, 
+                            "tooltip": {
+                                "modified_date": null, 
+                                "modified_user": null, 
+                                "description": null
+                            }, 
+                            "id": "f43ae33b0252f2ca7424c778615d5d09f8610c68", 
+                            "parent_id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                            "addable_column_ids": [
+                                "1359"
+                            ], 
+                            "value_type": "float", 
+                            "column_folder_node_type": "ROLLUP", 
+                            "children": [], 
+                            "addable_column_type": "assay"
+                        }, 
+                        {
+                            "name": "Glide_Gscore", 
+                            "favorite": false, 
+                            "updated_at": 76, 
+                            "tooltip": {
+                                "modified_date": null, 
+                                "modified_user": null, 
+                                "description": null
+                            }, 
+                            "id": "71dd3f6244bb402f6d10349f0fb8d4eeef141e42", 
+                            "parent_id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                            "addable_column_ids": [], 
+                            "column_folder_node_type": "INNER", 
+                            "children": [
+                                {
+                                    "name": "Glide_Gscore (3D)", 
+                                    "favorite": false, 
+                                    "updated_at": 77, 
+                                    "tooltip": {
+                                        "modified_date": null, 
+                                        "modified_user": null, 
+                                        "description": null
+                                    }, 
+                                    "id": "55c8c21bcfc57dbc19062c78722c126b498042d1", 
+                                    "parent_id": "71dd3f6244bb402f6d10349f0fb8d4eeef141e42", 
+                                    "addable_column_ids": [
+                                        "1509"
+                                    ], 
+                                    "value_type": "3D", 
+                                    "column_folder_node_type": "LEAF", 
+                                    "children": [], 
+                                    "addable_column_type": "assay"
+                                }, 
+                                {
+                                    "name": "Glide_Gscore (MaeProp)", 
+                                    "favorite": false, 
+                                    "updated_at": 78, 
+                                    "tooltip": {
+                                        "modified_date": null, 
+                                        "modified_user": null, 
+                                        "description": null
+                                    }, 
+                                    "id": "feb1271dc4e5e97b8a516e36b824d8468d62a9a0", 
+                                    "parent_id": "71dd3f6244bb402f6d10349f0fb8d4eeef141e42", 
+                                    "addable_column_ids": [
+                                        "1510"
+                                    ], 
+                                    "value_type": "float", 
+                                    "column_folder_node_type": "LEAF", 
+                                    "children": [], 
+                                    "addable_column_type": "assay"
+                                }
+                            ], 
+                            "addable_column_type": "assay"
+                        }, 
+                        {
+                            "name": "Ligand Properties Test", 
+                            "favorite": false, 
+                            "updated_at": 66, 
+                            "tooltip": {
+                                "modified_date": null, 
+                                "modified_user": null, 
+                                "description": null
+                            }, 
+                            "id": "0fcf7f1d6a324bf81a3ff61637fe4da14ed05c9f", 
+                            "parent_id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                            "addable_column_ids": [], 
+                            "column_folder_node_type": "INNER", 
+                            "children": [
+                                {
+                                    "name": "Ligand Properties Test (MaeProp)", 
+                                    "favorite": false, 
+                                    "updated_at": 68, 
+                                    "tooltip": {
+                                        "modified_date": null, 
+                                        "modified_user": null, 
+                                        "description": null
+                                    }, 
+                                    "id": "2a52a41234ea4f5844f056c9710c69c7b0c2ddd0", 
+                                    "parent_id": "0fcf7f1d6a324bf81a3ff61637fe4da14ed05c9f", 
+                                    "addable_column_ids": [
+                                        "1409"
+                                    ], 
+                                    "value_type": "variable", 
+                                    "column_folder_node_type": "LEAF", 
+                                    "children": [], 
+                                    "addable_column_type": "assay"
+                                }, 
+                                {
+                                    "name": "Ligand Properties Test (MaeProp2)", 
+                                    "favorite": false, 
+                                    "updated_at": 67, 
+                                    "tooltip": {
+                                        "modified_date": null, 
+                                        "modified_user": null, 
+                                        "description": null
+                                    }, 
+                                    "id": "1178df0697be873586b3a8eee1d94c644d3716d8", 
+                                    "parent_id": "0fcf7f1d6a324bf81a3ff61637fe4da14ed05c9f", 
+                                    "addable_column_ids": [
+                                        "1459"
+                                    ], 
+                                    "value_type": "float", 
+                                    "column_folder_node_type": "LEAF", 
+                                    "children": [], 
+                                    "addable_column_type": "assay"
+                                }
+                            ], 
+                            "addable_column_type": "assay"
+                        }, 
+                        {
+                            "name": "Ligand Properties Test2 (MaeProp2)", 
+                            "favorite": false, 
+                            "updated_at": 70, 
+                            "tooltip": {
+                                "modified_date": null, 
+                                "modified_user": null, 
+                                "description": null
+                            }, 
+                            "id": "d9c41b72a165865bd46d818ce0072399a3ba4c47", 
+                            "parent_id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                            "addable_column_ids": [
+                                "1460"
+                            ], 
+                            "value_type": "float", 
+                            "column_folder_node_type": "ROLLUP", 
+                            "children": [], 
+                            "addable_column_type": "assay"
+                        }, 
+                        {
+                            "name": "PDB RES (PDBProp)", 
+                            "favorite": false, 
+                            "updated_at": 80, 
+                            "tooltip": {
+                                "modified_date": null, 
+                                "modified_user": null, 
+                                "description": null
+                            }, 
+                            "id": "6c8902999d5ad7550a7c4aaf628970934239f02c", 
+                            "parent_id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                            "addable_column_ids": [
+                                "1461"
+                            ], 
+                            "value_type": "float", 
+                            "column_folder_node_type": "ROLLUP", 
+                            "children": [], 
+                            "addable_column_type": "assay"
+                        }, 
+                        {
+                            "name": "PDB RES 2 (PDBProp)", 
+                            "favorite": false, 
+                            "updated_at": 72, 
+                            "tooltip": {
+                                "modified_date": null, 
+                                "modified_user": null, 
+                                "description": null
+                            }, 
+                            "id": "e81eba1c46816e39ec78ee8edbb3b8fafab02e37", 
+                            "parent_id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                            "addable_column_ids": [
+                                "1511"
+                            ], 
+                            "value_type": "float", 
+                            "column_folder_node_type": "ROLLUP", 
+                            "children": [], 
+                            "addable_column_type": "assay"
+                        }, 
+                        {
+                            "name": "sF_Sum", 
+                            "favorite": false, 
+                            "updated_at": 62, 
+                            "tooltip": {
+                                "modified_date": null, 
+                                "modified_user": null, 
+                                "description": null
+                            }, 
+                            "id": "0aa7213b95242d2df3a1ed91a8913a4a02dfd7d7", 
+                            "parent_id": "3c005a8490025be6bb1cd2d66e4e55a5b9107f86", 
+                            "addable_column_ids": [], 
+                            "column_folder_node_type": "INNER", 
+                            "children": [
+                                {
+                                    "name": "sF_Sum (3D)", 
+                                    "favorite": true, 
+                                    "updated_at": 63, 
+                                    "tooltip": {
+                                        "modified_date": null, 
+                                        "modified_user": null, 
+                                        "description": null
+                                    }, 
+                                    "id": "5734620cc43d263a66b86b805d464f510efd70c5", 
+                                    "parent_id": "0aa7213b95242d2df3a1ed91a8913a4a02dfd7d7", 
+                                    "addable_column_ids": [
+                                        "1309"
+                                    ], 
+                                    "value_type": "3D", 
+                                    "column_folder_node_type": "LEAF", 
+                                    "children": [], 
+                                    "addable_column_type": "assay"
+                                }, 
+                                {
+                                    "name": "sF_Sum (glide gscore)", 
+                                    "favorite": true, 
+                                    "updated_at": 64, 
+                                    "tooltip": {
+                                        "modified_date": null, 
+                                        "modified_user": null, 
+                                        "description": null
+                                    }, 
+                                    "id": "1227be5e49e98080fd552ebf007043437c5049aa", 
+                                    "parent_id": "0aa7213b95242d2df3a1ed91a8913a4a02dfd7d7", 
+                                    "addable_column_ids": [
+                                        "1310"
+                                    ], 
+                                    "value_type": "float", 
+                                    "column_folder_node_type": "LEAF", 
+                                    "children": [], 
+                                    "addable_column_type": "assay"
+                                }
+                            ], 
+                            "addable_column_type": "assay"
+                        }
+                    ]
+                }
+            ]
+        }
+    ], 
+    "display_column_type": "computational_model"
+}

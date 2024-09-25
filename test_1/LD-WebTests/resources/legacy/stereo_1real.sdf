@@ -1,0 +1,59 @@
+SCHRO1
+                    3D
+ Structure written by MMmdl.
+ 10 10  0  0  1  0            999 V2000
+    0.3572    1.0313    0.0000 N   0  0  0  0  0  0
+    0.3572    0.2063    0.0000 C   0  0  0  0  0  0
+    1.0717   -0.2062    0.0000 C   0  0  0  0  0  0
+    1.0717   -1.0312    0.0000 C   0  0  0  0  0  0
+    0.3572   -1.4437    0.0000 N   0  0  0  0  0  0
+   -0.3572   -1.0312    0.0000 C   0  0  0  0  0  0
+   -0.3572   -0.2062    0.0000 C   0  0  0  0  0  0
+   -0.9703    0.1477    0.8288 H   0  0  0  0  0  0
+   -0.9703    0.1477   -0.8288 H   0  0  0  0  0  0
+   -0.5949    1.3684   -0.0000 H   0  0  0  0  0  0
+  1  2  1  0  0  0
+  1 10  1  0  0  0
+  2  3  1  0  0  0
+  2  7  1  0  0  0
+  3  4  1  0  0  0
+  4  5  1  0  0  0
+  5  6  1  0  0  0
+  6  7  1  0  0  0
+  7  8  1  0  0  0
+  7  9  1  0  0  0
+M  END
+> <s_m_entry_id>
+1
+
+> <s_m_entry_name>
+stereo_reals.1
+
+> <Experimental Assay Data>
+0.77
+
+> <chiral flag>
+0
+
+> <version>
+0
+
+> <s_m_Source_Path>
+H:\delme
+
+> <s_m_Source_File>
+stereo_reals.sdf
+
+> <i_m_Source_File_Index>
+1
+
+> <s_m_subgroupid>
+stereo_reals
+
+> <s_m_subgroup_title>
+stereo_reals
+
+> <b_m_subgroup_collapsed>
+0
+
+$$$$

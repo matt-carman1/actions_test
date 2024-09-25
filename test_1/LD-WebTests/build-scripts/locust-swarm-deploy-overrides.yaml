@@ -1,0 +1,27 @@
+global:
+  backup_to_restore:
+    bucket_path: bluebird-public-starter-data/locust-load-db-dump-2023-3
+    db:
+      synaptic:
+        filename_targz: "synaptic-database.tar.gz"
+        filename_dump: "synaptic-database.dump"
+        volume_size: 30Gi
+        # NOTE(zou) See note on launch_livedesign.sh#LOCUST_DATA_DUMP_NAME
+        # The DB dump itself contains the schema changes, but it is added here so that
+        # 1) we are resilient to someone overriding the DB dump in the future
+        # 2) the schema changes are explicitly codified into the test configs here
+        overrides: |
+          ALTER TABLE ld_model_result ALTER COLUMN entity_id SET STATISTICS 100;
+          ALTER TABLE ld_model_result ALTER COLUMN addable_column_id SET STATISTICS 100;
+          ANALYZE ld_model_result;
+    sandbox:
+      filename_targz: "sandbox.tar.gz"
+
+  cloudsql:
+    cpu: 12
+    memory: 24
+    storage: 40GB
+
+  livedesign_resources:
+    memory_Gi: 48
+    cpu: 8

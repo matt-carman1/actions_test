@@ -1,0 +1,4 @@
+Compound Structure,ID,All IDs,Rationale,Lot Scientist,Imported Assay
+CC\C(=N/OC(C)=O)C1=CC=C(Cl)C=C1Cl,CRA-035418,CRA-035418,demo: A small Live Report for testing.,demo;demo,Imported Assay Value 1
+OC1=CC=CC2=C1CN1CCC3=CC4=C(OCO4)C=C3C1C2,CRA-035419,CRA-035419,demo: A small Live Report for testing.,demo;demo,Imported Assay Value 2
+OC1=CC2=C(C=C1O)C1CC3=CC=CC(O)=C3CN1CC2,CRA-035420,CRA-035420,demo: A small Live Report for testing.,demo;demo,Imported Assay Value 3

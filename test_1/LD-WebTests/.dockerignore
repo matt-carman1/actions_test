@@ -1,0 +1,16 @@
+.pyenv
+.pyenv-locust
+.pytest_cache
+venv
+.\#*
+webtests_env
+__pycache__
+results
+ldclient.tar.gz
+anaconda.sh
+anaconda
+webtests_env
+Chrome_parallel_results.html
+Chrome_serial_results.html
+Firefox_parallel_results.html
+Firefox_serial_results.html

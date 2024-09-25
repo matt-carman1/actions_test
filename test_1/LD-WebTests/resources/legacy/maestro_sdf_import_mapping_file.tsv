@@ -1,0 +1,5 @@
+s_ld_export_compound_id	entity_id	model_name	ligand_zip_file_path	target_zip_file_path
+1	LDT-035000	sF_Sum	ligand-1.mae	target.mae
+1	LDT-035000	sF_Sum	ligand-2.mae	target.mae
+2	LDT-035000	sF_Sum	ligand-3.mae	target.mae
+2	LDT-035000	sF_Sum	ligand-4.mae	target.mae

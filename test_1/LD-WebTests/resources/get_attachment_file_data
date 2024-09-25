@@ -1,0 +1,30 @@
+"""
+Example supplementary scoring class. Note that the file name doesn't matter
+since the Models logic will generate a random file name.
+"""
+
+def get_value(column_data, key, min_weight=3, max_weight=42):
+    """
+    Generic interface for manipulating column data
+
+    @param column_data: The column data
+    @type  column_data: dict{str:float}
+    @param force_update: Whether to calculate the min/max of the dataset again
+    @type  force_update: bool
+    """
+    min_value = min(column_data.values())
+    max_value = max(column_data.values())
+    values_difference = max_value - min_value
+
+    # Difference of the highest allowable score and lowest allowable score
+    score_difference = max_weight - min_weight
+
+    # If there's no data return an empty string
+    value = column_data.get(key, None)
+    if value is None:
+        return ''
+    else:
+        value -= min_value
+    if values_difference == 0:
+        values_difference = 39
+    return min_weight + ((value/values_difference) * score_difference)

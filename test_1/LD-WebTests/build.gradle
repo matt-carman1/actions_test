@@ -1,0 +1,86 @@
+plugins {
+}
+
+def virtualEnvPath = "$projectDir/webtests_env"
+def buildStampPath = "$virtualEnvPath/build-stamp"
+def sphinxApiDocExecutable = "$virtualEnvPath/bin/sphinx-apidoc"
+def sphinxBuildExecutable = "$virtualEnvPath/bin/sphinx-build"
+def docsSourcePath = "$projectDir/docs"
+def docsBuildPath = "$docsSourcePath/_build"
+
+task createVirtualEnv {
+    doLast {
+        exec {
+            workingDir "$projectDir"
+            commandLine "virtualenv", "-p", "python3", "$virtualEnvPath"
+        }
+        exec {
+            commandLine "touch", "$buildStampPath"
+        }
+    }
+    // NOTE(kau): If we watch the entire directory, this task is recompiled often because pip and
+    // easy-install are changed during execution
+    outputs.file "$buildStampPath"
+}
+
+// Builds python environment for running tests
+task build {
+    dependsOn createVirtualEnv
+    inputs.dir file("$projectDir")
+    outputs.dir file("$virtualEnvPath")
+
+    doLast {
+        exec {
+            commandLine "$virtualEnvPath/bin/pip", "install", "-qq", "-U", "-r", "$projectDir/requirements.txt"
+        }
+        exec {
+            commandLine "$virtualEnvPath/bin/pip", "install", "-e", "../LD-WebServicesClient"
+        }
+    }
+}
+
+// Destroys python environment for running tests
+task clean {
+    doLast {
+        exec {
+            commandLine "rm", "-rf", "$virtualEnvPath"
+            ignoreExitValue true
+        }
+    }
+}
+
+// Runs API tests.  pass in extra args using ARGS environment variable. Set server hostname with LD_SERVER. ex. LD_SERVER=https://badlato.k8s.dev.bb.schrodinger.com/ ARGS=tests/api/enumeration ./gradlew :livedesign-web-tests:apiTest
+task apiTest {
+    dependsOn build
+    doLast {
+        exec {
+            commandLine "$virtualEnvPath/bin/python3", "$projectDir/LD-APITests_runner.py", "--error_on_fail", "--all_tests", "--extra_pytest_args", "$System.env.ARGS"
+        }
+    }
+}
+
+// Runs selenium tests. Pass in extra args using ARGS environment variable. Set server hostname with LD_SERVER. ex. LD_SERVER=https://badlato.k8s.dev.bb.schrodinger.com/ ARGS=tests/selenium/enumeration ./gradlew :livedesign-web-tests:seleniumTest
+task seleniumTest {
+    dependsOn build
+    doLast {
+        exec {
+            commandLine "$virtualEnvPath/bin/python3", "$projectDir/LD-WebTests_runner.py", "--browser", "$System.env.BROWSER", "--error_on_fail", "--extra_pytest_args", "$System.env.ARGS"
+        }
+    }
+}
+
+// Builds sphinx html docs
+task html {
+    dependsOn build
+    doLast {
+        exec {
+            commandLine "rm", "-rf", "$docsSourcePath/tests", "$docsSourcePath/library", "$docsSourcePath/helpers", "$docsBuildPath/html"
+            commandLine "$sphinxApiDocExecutable", "-M", "-o", "$docsSourcePath/tests", "tests"
+            commandLine "$sphinxApiDocExecutable", "-M", "-o", "$docsSourcePath/library", "library"
+            commandLine "$sphinxApiDocExecutable", "-M", "-o", "$docsSourcePath/helpers", "helpers"
+            commandLine "$sphinxBuildExecutable", "-M", "html", "$docsSourcePath", "$docsBuildPath"
+        }
+    }
+}
+
+description = 'LiveDesign Web Tests'

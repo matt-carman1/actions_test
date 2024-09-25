@@ -1,0 +1,8 @@
+global:
+  cloudsql:
+    cpu: 6
+    memory: 16
+
+  livedesign_resources:
+    memory_Gi: 24
+    cpu: 4

@@ -1,0 +1,76 @@
+openldap-stack-ha:
+  customLdifFiles:
+    07-default-groups.ldif: |
+      dn: ou=groups,dc=livedesign
+      description: "LDAP Groups"
+      objectClass: top
+      objectClass: organizationalUnit
+
+      dn: cn=livedesign-admins,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: livedesign-admins
+      description: "LD LDAP Admins"
+      member: cn=admin,dc=livedesign
+      member: cn=test user,dc=livedesign
+      member: cn=demo user,dc=livedesign
+      member: cn=acas user,dc=livedesign
+      member: cn=seurat user,dc=livedesign
+      member: cn=testAdmin user,dc=livedesign
+
+      dn: cn=livedesign-project-admins,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: livedesign-project-admins
+      description: "LD LDAP ProjectAdministrators"
+      member: cn=admin,dc=livedesign
+
+      dn: cn=livedesign-users,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: livedesign-users
+      description: "LD LDAP Users"
+      member: cn=admin,dc=livedesign
+      member: cn=userA user,dc=livedesign
+      member: cn=userB user,dc=livedesign
+      member: cn=userC user,dc=livedesign
+      member: cn=commaDecimalUser user,dc=livedesign
+
+      dn: cn=livedesign-protocol-builders,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: livedesign-protocol-builders
+      description: "LD LDAP Protocol Builders"
+      member: cn=admin,dc=livedesign
+
+      dn: cn=livedesign-viewers,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: livedesign-viewers
+      description: "LD LDAP Viewers"
+
+      dn: cn=acas-admins,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: acas-admins
+      description: "ACAS Admins"
+      member: cn=test user,dc=livedesign
+      member: cn=acas user,dc=livedesign
+
+      dn: cn=acas-users,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: acas-users
+      description: "ACAS Users"
+      member: cn=test user,dc=livedesign
+
+      dn: cn=cmpdreg-admins,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: cmpdreg-admins
+      description: "CReg Admins"
+      member: cn=test user,dc=livedesign
+
+      dn: cn=cmpdreg-users,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: cmpdreg-users
+      description: "CReg Users"
+      member: cn=test user,dc=livedesign
+
+      dn: cn=cmpdreg-readonly,ou=groups,dc=livedesign
+      objectClass: groupOfNames
+      cn: cmpdreg-readonly
+      description: "CmpdReg ReadOnly role - for viewing ACAS/CReg attachments"
+      member: cn=test user,dc=livedesign

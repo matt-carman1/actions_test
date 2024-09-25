@@ -1,0 +1,14 @@
+# Note to testwriters:
+# Create a python virtualenv for test writing using the create_dev_environment.sh script
+CairoSVG==2.5.2
+pytest<7.0.0, >=6.0.0
+pytest-selenium==4.0.0
+selenium==4.8.3
+python-jenkins==1.7.0
+pytest-xdist==2.2.1
+pytest-rerunfailures==9.1.1
+pytest-repeat==0.9.1
+PyYAML==5.4.1
+Sphinx==3.5.4
+yapf==0.31.0
+allure-pytest==2.8.40
