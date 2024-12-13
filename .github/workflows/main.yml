@@ -28,7 +28,7 @@ jobs:
       run: |
         ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
         source test_env.ve/bin/activate
-        pip install selenium
+        pip install --upgrade --target ${{ github.event.inputs.SCHRODINGER }}/internal/lib/python3.11/site-packages/ selenium
     - name: run squish suite
       run: ${{ github.event.inputs.SCHRODINGER }}/run run_squish_suites.py --suitedir /scr/carman/Git_Repos/actions_test/test_suites --outdir /scr/carman
         
