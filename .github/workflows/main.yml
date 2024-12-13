@@ -24,11 +24,12 @@ jobs:
     - uses: actions/checkout@v4
     - name: SCHRODINGER
       run: echo ${{ github.event.inputs.SCHRODINGER }}
-    - name: Create venv and install selenium
-      run: |
-        ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
-        source test_env.ve/bin/activate
-        pip install --upgrade --target ${{ github.event.inputs.SCHRODINGER }}/internal/lib/python3.11/site-packages/ selenium
+    #- name: Create venv and install selenium
+     # run: |
+      #  ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
+       # source test_env.ve/bin/activate
+    - name: Install selenium to target
+      run: pip install --upgrade --target ${{ github.event.inputs.SCHRODINGER }}/internal/lib/python3.11/site-packages/ selenium
     - name: run squish suite
       run: ${{ github.event.inputs.SCHRODINGER }}/run run_squish_suites.py --suitedir /scr/carman/Git_Repos/actions_test/test_suites --outdir /scr/carman
         
