@@ -29,7 +29,7 @@ jobs:
         ${{ github.event.inputs.SCHRODINGER }}/run schrodinger_virtualenv.py test_env.ve
         source test_env.ve/bin/activate
         pip install selenium
-        ${{ github.event.inputs.SCHRODINGER}}/run run_squish_suites.py --outdir /scr/carman --suitedir /scr/carman/Git_Repos/GUI_tests/gui_tests/interface_export
+        ${{ github.event.inputs.SCHRODINGER}}/run run_squish_suites.py -t selenium_test_1
         
    
     #- name: Start venv
